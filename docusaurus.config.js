@@ -1,44 +1,33 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'TurboWarp Documentation',
-  url: 'https://docs.turbowarp.org',
-  baseUrl: '/',
+  title: 'GaiaMod Documentation',
+  url: 'https://gaiawindwave90.github.io',
+  baseUrl: '/GaiaMod-Docs/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  organizationName: 'TurboWarp',
+  organizationName: 'GaiaMod',
   projectName: 'docs',
   trailingSlash: false,
   themeConfig: {
     navbar: {
-      title: 'TurboWarp Documentation',
+      title: 'GaiaMod Documentation',
       items: [
         {
-          href: '/packager/',
-          label: 'Packager',
+          href: 'https://types.turbowarp.org/',
+          label: 'TurboWarp Type Reference',
           position: 'left'
         },
         {
-          href: '/development/',
-          label: 'Development',
-          position: 'left'
-        },
-        {
-          href: 'https://turbowarp.org/',
-          label: 'TurboWarp',
+          href: 'https://gaiawindwave90.github.io/GaiaMod',
+          label: 'GaiaMod',
           position: 'right'
         },
         {
-          href: 'https://github.com/TurboWarp',
+          href: 'https://github.com/gaiawindwave90/GaiaMod/',
           label: 'GitHub',
           position: 'right',
         },
       ],
-    },
-    algolia: {
-      // This is all supposed to be public
-      appId: 'HORQ9E5CCA',
-      apiKey: 'c3873ce4208edb896a31bb3e7c2cbdad',
-      indexName: 'turbowarp'
     },
     colorMode: {
       respectPrefersColorScheme: true,
@@ -46,6 +35,7 @@ module.exports = {
     prism: {
       theme: require('./code-themes/light'),
       darkTheme: require('./code-themes/dark'),
+      additionalLanguages: ['json']
     },
   },
   presets: [
